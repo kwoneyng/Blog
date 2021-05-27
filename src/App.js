@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom"
 import styled from 'styled-components';
+// import { Home, Problem, AboutMe, TIL, Portfolio } from 'pages'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Problem from './pages/Problem';
@@ -24,10 +25,10 @@ function App() {
       </Navbar>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/problem" component={Problem} />
-        <Route exact path="/til" component={TIL} />
-        <Route exact path="/about" component={AboutMe} />
-        <Route exact path="/portfolio" component={Portfolio} />
+        <Route path="/problem" component={Problem} />
+        <Route path="/til" component={TIL} />
+        <Route path="/about" component={AboutMe} />
+        <Route path="/portfolio" component={Portfolio} />
 
       </Switch>
     </BrowserRouter>
